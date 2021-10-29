@@ -1,3 +1,8 @@
-docker exec passbolt su -m -c "bin/cake passbolt register_user -u emixbal@gmail.com -f eqbal -l surname -r admin" -s /bin/sh www-data
+docker exec passbolt_passbolt_1 su -m -c "bin/cake passbolt register_user -u eqbal@prohukum.com.com -f user1 -l ph -r user" -s /bin/sh www-data
 
 
+docker exec passbolt_passbolt_1 su -m -c "bin/cake passbolt register_user -u naufal@arcacorp.com -f naufal -l hakim -r user" -s /bin/sh www-data
+http://192.168.0.65:8001/setup/install/2ee49ea3-dca9-42c6-ac31-b44be2fc2453/6a370e8c-af63-4a9a-949d-ee467b49bd68
+
+
+docker exec passbolt_passbolt_1 su -m -c "./bin/cake passbolt send_test_email --recipient=eqbal@prohukum.com" -s /bin/sh www-data
